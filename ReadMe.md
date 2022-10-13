@@ -40,7 +40,7 @@ To see the data in the database double click on the same file. This will open th
 
 ## Add a foreign key:
 
-`
+```
     public class Customers
     {
         public int Id { get; set; }
@@ -62,4 +62,4 @@ To see the data in the database double click on the same file. This will open th
         public static readonly byte Unknown = 0;
         public static readonly byte PayAsYouGo = 1;
     }
-`
+```
