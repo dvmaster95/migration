@@ -1,4 +1,6 @@
 
 # Migrations
 
-`enable-migrations`
+```
+enable-migrations
+```
