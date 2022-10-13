@@ -41,25 +41,25 @@ To see the data in the database double click on the same file. This will open th
 ## Add a foreign key:
 
 ```
-    public class Customers
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public bool NewsletterSubscription { get; set; }    
-        public byte MembershipTypeId { get; set; }
-        public virtual MembershipType MembershipType { get; set; }  
-    }
-    
-    public class MembershipType
-    {
-        public byte Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        public short SignUpFee { get; set; }
-        public byte DurationInMonths { get; set; }
-        public byte DiscountRate { get; set; }
+public class Customers
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public bool NewsletterSubscription { get; set; }    
+    public byte MembershipTypeId { get; set; }
+    public virtual MembershipType MembershipType { get; set; }  
+}
 
-        public static readonly byte Unknown = 0;
-        public static readonly byte PayAsYouGo = 1;
-    }
+public class MembershipType
+{
+    public byte Id { get; set; }
+    [Required]
+    public string Name { get; set; }
+    public short SignUpFee { get; set; }
+    public byte DurationInMonths { get; set; }
+    public byte DiscountRate { get; set; }
+
+    public static readonly byte Unknown = 0;
+    public static readonly byte PayAsYouGo = 1;
+}
 ```
