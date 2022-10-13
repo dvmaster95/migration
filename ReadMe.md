@@ -63,3 +63,14 @@ public class MembershipType
     public static readonly byte PayAsYouGo = 1;
 }
 ```
+
+When querying inside a controller it's necesary to import the DB context and initialize it in the constructor:
+
+```
+private ApplicationDbContext _context;
+
+public CustomersController()
+{
+    _context = new ApplicationDbContext();
+}
+```
