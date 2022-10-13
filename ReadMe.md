@@ -1,1 +1,4 @@
 
+# Migrations
+
+`enable-migrations`
